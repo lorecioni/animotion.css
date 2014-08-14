@@ -131,6 +131,13 @@ $(document).on('change', 'input[name="duration"]', function(){
 		$('#test').removeClass();
 		setTimeout(function(){
 			$('#test').addClass($('#select-animotion').val() + ' ' + $('input[name="duration"]:checked').val());
+			if($('#code').is(':visible')){
+				var text = '&lt;element <span class="blue">class</span>=<span class="green">"' 
+					+ $('#select-animotion').val() + ' ' 
+					+ $('input[name="duration"]:checked').val() 
+					+ '"</span>&gt;Text&lt;/element&gt;';
+				$('#code').html(text);
+			}
 		}, 200);
 			
 	}
