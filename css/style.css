@@ -1,0 +1,252 @@
+﻿@CHARSET "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Life Savers, sans-serif !important;
+	background-color: #FDFFE0;
+}
+
+a.github-ribbon {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#container {
+	width: 600px;
+	margin: 0px auto;
+}
+
+h1 {
+	font-size: 4.4em;
+	text-align: center;
+	color: #500202;
+	margin: 30px 0px 10px 0px;
+}
+
+
+h2 {
+	font-size: 14pt;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	padding-top: 50px;
+	clear: both
+}
+
+#test{
+	float: left;
+	width: 200px;
+	height: 200px;
+	background-color: #5C0303;
+	color: white;
+	text-align: center;
+	font-size: 3em;
+	line-height: 200px;
+}
+
+#select-animotion{
+	opacity: 0;
+}
+
+#content {
+	margin-top: 75px;
+	height: 200px;
+}
+
+#code {
+	display: none;
+	margin: 40px auto 0px;
+	width: 400px;
+	text-align: center;
+	background: #FFF081;
+	padding: 13px;
+	font-size: 1.4em;
+	border-radius: 5px;
+}
+
+.green {
+	color: #218302;
+}
+
+.blue {
+	color: #0026BD;
+}
+
+a {
+	text-decoration: none;
+}
+
+#right-panel {
+	float: left;
+	margin-left: 40px;
+	width: 60%;
+}
+
+.dropcontainer {
+	position: relative;
+	font-size: 16px;
+	color: #777;
+}
+
+.trigger {
+	color: #0E0E0D;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 20px;
+	width: 48%;
+	border-radius: 5px;
+	background: #D6E2F1 url(../img/arrow_down.png) 98% center no-repeat;
+	display: block;
+	border: 1px solid #BEBEBE;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-size: 25px;
+	margin: 0px auto;
+	transition: all 0.5s ease-out 0s;
+}
+
+.trigger:hover {
+	color: #777;
+	background: #f5f5f5 url(../img/arrow_down.png) 98% center no-repeat;
+	background-size: 25px;
+}
+
+.activetrigger {
+	color: #777;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	transition: all 0.5s ease-out 0s;
+	font-size: 20px;
+	border-radius: 5px;
+	width: 48%;
+	background: #f5f5f5 url(../img/arrow_up.png) 98% center no-repeat;
+	background-size: 25px;
+	display: block;
+	border: 1px solid #BEBEBE;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0px auto;
+}
+
+.activetrigger:hover {
+	background: #f5f5f5 url(../img/arrow_up.png) 98% center no-repeat;
+	background-size: 25px;
+	color: #777;
+}
+
+.activetrigger:active {
+	background: #f5f5f5 url(../img/arrow_up.png) 98% center no-repeat;
+	background-size: 25px;
+	color: #777;
+}
+
+.dropcontainer ul {
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-top: none;
+	background: #fff;
+	list-style-type: none;
+	max-height: 125px;
+	padding: 0px;
+	/* margin: 0 auto; */
+	position: absolute;
+	top: -16px;
+	left: 94px;
+	width: 48%;
+	z-index: 100;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+#view-code {
+	background: #18929C;
+	display: inline-flex;
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	font-size: 15pt;
+	font-weight: bold;
+	margin: 75px 0px 0px 120px;
+	cursor: pointer;
+	transition: all 0.5s ease-out 0s;
+}
+
+#view-code:HOVER {
+	background: #20B6C2;
+}
+
+.dropcontainer ul li {
+	padding: 5px;
+	transition: all 0.5s ease-out 0s;
+}
+
+.dropcontainer ul li:hover {
+	background: #f5f5f5;
+	outline: none;
+}
+
+.dropcontainer ul li:first-child {
+	display: none;
+}
+
+.dropcontainer ul li:last-child {
+	border-bottom: none;
+}
+
+.dropcontainer li a {
+	color: #7C0202;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.dropdownhidden {
+	display: none;
+}
+
+.dropdownvisible {
+	height: auto;
+	overflow-y: scroll;
+}
+
+.dropdown { 
+	-webkit-transform-origin: center center; 
+	-ms-transform-origin: center center; 
+	transform-origin: center center;
+	-webkit-animation-name: dropdown; 
+	-ms-animation-name: dropdown; 
+	animation-name: dropdown; 
+	-webkit-animation-duration: 1s; 
+	-ms-animation-duration: 1s; 
+	animation-duration: 1s; 
+	-webkit-animation-delay: 0s; 
+	-ms-animation-delay: 0s; 
+	animation-delay: 0s; 
+}
+
+@-webkit-keyframes dropdown { 
+  0% { -webkit-transform: translate(0px, -300px);}
+  100% { -webkit-transform: translate(0px, 0px); }
+  }
+
+@-ms-keyframes dropdown { 
+  0% { -ms-transform: translate(0px, -300px);}
+  100% { -ms-transform: translate(0px, 0px); } }
+
+@keyframes dropdown { 
+  0% { transform: translate(0px, -300px);}
+  100% { transform: translate(0px, 0px); } }
+
