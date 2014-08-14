@@ -122,17 +122,32 @@ window.onload=function()
 $(document).on('change', '#select-animotion', function(){
 	$('#code').fadeOut('fast');
 	$('#test').removeClass();
-	$('#test').addClass($('#select-animotion').val());
+	$('#test').addClass($('#select-animotion').val() + ' ' + $('input[name="duration"]:checked').val());
 	$('#code').text('');
+});
+
+$(document).on('change', 'input[name="duration"]', function(){
+	if($('#select-animotion').val() != ""){
+		$('#test').removeClass();
+		setTimeout(function(){
+			$('#test').addClass($('#select-animotion').val() + ' ' + $('input[name="duration"]:checked').val());
+		}, 200);
+			
+	}
 });
 
 $(document).on('click', '#view-code', function(){
 	if($('#code').is(':visible')){
 		$('#code').fadeOut('fast');	
 	} else {
-		var text = '&lt;element <span class="blue">class</span>=<span class="green">"' + $('#select-animotion').val() +'"</span>&gt;Text&lt;/element&gt;';
-		$('#code').html(text);
-		$('#code').fadeIn('fast');	
+		if($('#select-animotion').val() != ""){
+			var text = '&lt;element <span class="blue">class</span>=<span class="green">"' 
+				+ $('#select-animotion').val() + ' ' 
+				+ $('input[name="duration"]:checked').val() 
+				+ '"</span>&gt;Text&lt;/element&gt;';
+			$('#code').html(text);
+			$('#code').fadeIn('fast');			
+		}
 	}
 });
 

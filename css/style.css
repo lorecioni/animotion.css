@@ -180,7 +180,7 @@ a {
 	color: white;
 	font-size: 15pt;
 	font-weight: bold;
-	margin: 75px 0px 0px 120px;
+	margin: 50px 0px 0px 120px;
 	cursor: pointer;
 	transition: all 0.5s ease-out 0s;
 }
@@ -250,3 +250,25 @@ a {
   0% { transform: translate(0px, -300px);}
   100% { transform: translate(0px, 0px); } }
 
+
+  input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(../img/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+input[type="radio"]:checked + label span {
+    background:url(../img/check_radio_sheet.png) -19px top no-repeat;
+}
+
+label.input-radio {
+	margin: 35px 22px 0px 0px;
+	display: block;
+	float: left;
+}

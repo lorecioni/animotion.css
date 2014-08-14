@@ -23,10 +23,17 @@
 			<div id="test" >Text</div>
 			<div id="right-panel">
 				<select id="select-animotion" class="turnintodropdown">
-					<option>Animotion:</option>
+					<option value="">Animotion:</option>
 					<option value="shake">Shake</option>
 				</select>
-				
+				<input type="radio" id="short" name="duration" value="short" checked/>
+					<label class="input-radio" for="short" ><span></span>Short</label>
+				<input type="radio" id="medium" name="duration" value="medium"/>
+					<label class="input-radio" for="medium"><span></span>Medium</label>
+				<input type="radio" id="long" name="duration" value="long" />
+					<label class="input-radio" for="long"><span></span>Long</label>
+				<input type="radio" id="infinite" name="duration" value="infinite"/>
+					<label class="input-radio" for="infinite"><span></span>Infinite</label>
 				<div id="view-code">View usage</div>
 			</div>
 		</div>
