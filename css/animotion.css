@@ -70,6 +70,66 @@
 	animation-name: bounce; 
 }
 
+.flip {
+	-webkit-animation-duration: 3s; 
+	-ms-animation-duration: 3s; 
+	animation-duration: 3s; 
+	-webkit-transform-origin: center center; 
+	-ms-transform-origin: center center; 
+	transform-origin: center center;
+	-webkit-animation-name: flip; 
+	-ms-animation-name: flip; 
+	animation-name: flip; 
+}
+
+.slideDown {
+	-webkit-animation-duration: 2s; 
+	-ms-animation-duration: 2s; 
+	animation-duration: 2s; 
+	-webkit-transform-origin: center center; 
+	-ms-transform-origin: center center; 
+	transform-origin: center center;
+	-webkit-animation-name: slideDown; 
+	-ms-animation-name: slideDown; 
+	animation-name: slideDown; 
+}
+
+.slideUp {
+	-webkit-animation-duration: 2s; 
+	-ms-animation-duration: 2s; 
+	animation-duration: 2s; 
+	-webkit-transform-origin: center center; 
+	-ms-transform-origin: center center; 
+	transform-origin: center center;
+	-webkit-animation-name: slideUp; 
+	-ms-animation-name: slideUp; 
+	animation-name: slideUp; 
+}
+
+.slideLeft {
+	-webkit-animation-duration: 2s; 
+	-ms-animation-duration: 2s; 
+	animation-duration: 2s; 
+	-webkit-transform-origin: center center; 
+	-ms-transform-origin: center center; 
+	transform-origin: center center;
+	-webkit-animation-name: slideLeft; 
+	-ms-animation-name: slideLeft; 
+	animation-name: slideLeft; 
+}
+
+.slideRight {
+	-webkit-animation-duration: 2s; 
+	-ms-animation-duration: 2s; 
+	animation-duration: 2s; 
+	-webkit-transform-origin: center center; 
+	-ms-transform-origin: center center; 
+	transform-origin: center center;
+	-webkit-animation-name: slideRight; 
+	-ms-animation-name: slideRight; 
+	animation-name: slideRight; 
+}
+
 /* Keyframes */
 
 @-webkit-keyframes shake { 
@@ -174,7 +234,8 @@
   92% { -ms-transform: translate(-2.5px, -0.5px) rotate(0.5deg); }
   94% { -ms-transform: translate(-1.5px, -1.5px) rotate(-1.5deg); }
   96% { -ms-transform: translate(1.5px, 1.5px) rotate(0.5deg); }
-  98% { -ms-transform: translate(-2.5px, -0.5px) rotate(0.5deg); } }
+  98% { -ms-transform: translate(-2.5px, -0.5px) rotate(0.5deg); } 
+}
 
 @keyframes shake { 
   0% { transform: translate(0px, 0px) rotate(0deg); }
@@ -226,7 +287,8 @@
   92% { transform: translate(-1.5px, 0.5px) rotate(0.5deg); }
   94% { transform: translate(-1.5px, -0.5px) rotate(0.5deg); }
   96% { transform: translate(1.5px, 0.5px) rotate(-0.5deg); }
-  98% { transform: translate(-0.5px, -1.5px) rotate(0.5deg); } }
+  98% { transform: translate(-0.5px, -1.5px) rotate(0.5deg); } 
+}
   
 @-webkit-keyframes bounce { 
   0% { -webkit-transform: translate(0px, 0px); }
@@ -254,6 +316,7 @@
   80% { -ms-transform: translate(0px, -5px); }
   90% { -ms-transform: translate(0px, 2px); }
   100% { -ms-transform: translate(0px, 0px); }
+}
 
 @keyframes bounce { 
   0% { transform: translate(0px, 0px); }
@@ -267,4 +330,79 @@
   80% { transform: translate(0px, -5px); }
   90% { transform: translate(0px, 2px); }
   100% { transform: translate(0px, 0px); }
+}
+
+@-webkit-keyframes flip { 
+  from { -webkit-transform: scaleX(1); }
+  to { -webkit-transform: scaleX(-1); }
+  }
+
+@-ms-keyframes flip { 
+  from { -ms-transform: scaleX(1); }
+  to { -ms-transform: scaleX(-1); }
+}
+
+@keyframes flip { 
+  from { transform: scaleX(1); }
+  to { transform: scaleX(-1); }
+}
+
+@-webkit-keyframes slideDown { 
+  from { -webkit-transform: translate(0px, 0px); }
+  to { -webkit-transform: translate(0px, 1000px); }
+  }
+
+@-ms-keyframes slideDown { 
+  from { -ms-transform: translate(0px, 0px); }
+  to { -ms-transform: translate(0px, 1000px); }
+}
+  
+@keyframes slideDown { 
+  from { transform: translate(0px, 0px); }
+  to { transform: translate(0px, 1000px); }
+}
+
+@-webkit-keyframes slideUp { 
+  from { -webkit-transform: translate(0px, 0px); }
+  to { -webkit-transform: translate(0px, -1000px); }
+  }
+
+@-ms-keyframes slideUp { 
+  from { -ms-transform: translate(0px, 0px); }
+  to { -ms-transform: translate(0px, -1000px); }
+}
+  
+@keyframes slideUp { 
+  from { transform: translate(0px, 0px); }
+  to { transform: translate(0px, -1000px); }
+}
+
+@-webkit-keyframes slideLeft { 
+  from { -webkit-transform: translate(0px, 0px); }
+  to { -webkit-transform: translate(-1000px, 0px); }
+  }
+
+@-ms-keyframes slideLeft { 
+  from { -ms-transform: translate(0px, 0px); }
+  to { -ms-transform: translate(-1000px, 0px); }
+}
+  
+@keyframes slideLeft { 
+  from { transform: translate(0px, 0px); }
+  to { transform: translate(-1000px, 0px); }
+}
+
+@-webkit-keyframes slideRight { 
+  from { -webkit-transform: translate(0px, 0px); }
+  to { -webkit-transform: translate(1000px, 0px); }
+  }
+
+@-ms-keyframes slideRight { 
+  from { -ms-transform: translate(0px, 0px); }
+  to { -ms-transform: translate(1000px, 0px); }
+}
+  
+@keyframes slideRight { 
+  from { transform: translate(0px, 0px); }
+  to { transform: translate(1000px, 0px); }
 }
