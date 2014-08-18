@@ -142,6 +142,18 @@
 	animation-name: slideRight; 
 }
 
+.stretch{
+	-webkit-animation-duration: 2s; 
+	-ms-animation-duration: 2s; 
+	animation-duration: 2s; 
+	-webkit-transform-origin: center center; 
+	-ms-transform-origin: center center; 
+	transform-origin: center center;
+	-webkit-animation-name: stretch; 
+	-ms-animation-name: stretch; 
+	animation-name: stretch; 
+}
+
 /* Keyframes */
 
 @-webkit-keyframes shake { 
@@ -436,4 +448,22 @@
 @keyframes slideRight { 
   from { transform: translate(0px, 0px); }
   to { transform: translate(1000px, 0px); }
+}
+
+@-webkit-keyframes stretch { 
+  0% { -webkit-transform: scaleX(1) scaleY(1);  }
+  50% { -webkit-transform: scaleX(2) scaleY(0.5); }
+  100% { -webkit-transform: scaleX(1) scaleY(1); }
+  }
+
+@-ms-keyframes stretch { 
+  0% { -ms-transform: scaleX(1) scaleY(1);  }
+  50% { -ms-transform: scaleX(2) scaleY(0.5); }
+  100% { -ms-transform: scaleX(1) scaleY(1); }
+}
+
+@keyframes stretch { 
+  0% { transform: scaleX(1) scaleY(1);  }
+  50% { transform: scaleX(2) scaleY(0.5); }
+  100% { transform: scaleX(1) scaleY(1); }
 }
