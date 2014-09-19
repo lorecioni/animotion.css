@@ -37,10 +37,8 @@ You can customize the animation count overwriting those classes:
 }
 ```
 
-
 ##Demo
-
-You can view simple demo for animotions [here](http://lorecioni.github.io/animotion.css)
+To check avaiable animotions and view a simple demo click [here](http://lorecioni.github.io/animotion.css)
 
 ## License
 Animation.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
