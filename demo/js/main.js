@@ -117,10 +117,12 @@ window.onload=function()
 {
 	tamingselect();
 	// add more functions if necessary
-}
+};
 
 
 $(document).ready(function(){
+
+	
 });
 
 $(document).on('change', '#select-animotion', function(){
@@ -158,5 +160,7 @@ function insertUsageCode(){
 		+ '"</span><span class="element">&gt;</span>Text<span class="element">&lt;/div&gt;</span>';
 	$('#code').html(text);
 }
+
+
 
 
