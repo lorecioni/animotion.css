@@ -352,3 +352,24 @@ footer a {
 	margin-top: 30px;
 	margin-bottom: 50px;
 }
+
+#twitter-share {
+	float: left;
+}
+
+.fb_iframe_widget {
+	display: inline-block;
+	position: relative;
+}
+
+.fb-like {
+	margin-right: 20px;
+	float: left;
+}
+
+#sharing-box {
+	width: 150px;
+	margin: 0px auto 25px auto;
+	height: 50px;
+	text-align: center;
+}
