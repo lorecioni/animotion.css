@@ -5,6 +5,7 @@ body {
 	padding: 0;
 	font-family: Life Savers, sans-serif !important;
 	background-color: #FDFFE0;
+	background: url('../img/texture.png');
 }
 
 a.github-ribbon {
