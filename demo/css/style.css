@@ -1,4 +1,5 @@
 ﻿@CHARSET "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Cabin);
 
 body {
 	margin: 0;
@@ -15,7 +16,7 @@ a.github-ribbon {
 }
 
 #container {
-	width: 600px;
+	width: 615px;
 	margin: 0px auto;
 }
 
@@ -40,7 +41,9 @@ h2 {
 footer {
 	text-align: center;
 	padding-top: 50px;
-	clear: both
+	clear: both;
+	font-weight: bold;
+	margin-bottom: 20px;
 }
 
 #test{
@@ -63,14 +66,16 @@ footer {
 	height: 200px;
 }
 
-#code {
-	display: none;
+.code {
 	margin: 40px auto 0px;
 	text-align: center;
-	background: #FFF081;
-	padding: 13px;
-	font-size: 1.4em;
+	padding: 20px 25px;
+	background: #f8f5f0;
+	color: #77674E;
+	font-size: 16px;
+	line-height: 18px;
 	border-radius: 5px;
+	box-shadow: inset 0 2px 2px rgba(180,157,125,.15), inset 0 0 1px rgba(0,0,0,.2);
 }
 
 .green {
@@ -268,7 +273,40 @@ input[type="radio"]:checked + label span {
 }
 
 label.input-radio {
-	margin: 35px 22px 0px 0px;
+	margin: 35px 19px 0px 0px;
 	display: block;
 	float: left;
+	font-weight: bold;
+}
+
+span.element {
+	color: #810000;
+}
+
+#usage-page {
+	margin-top: 30px;
+	padding-top: 30px;
+	border-top: 1px solid rgba(0, 0, 0, 0.16);
+	font-size: 1.2em;
+	/* font-weight: bold; */
+}
+
+h3 {
+	font-size: 1.7em;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #500202;
+}
+
+a {
+	color: #790000;
+	font-weight: bold;
+}
+
+a:HOVER {
+	color: #C43A3A;
 }

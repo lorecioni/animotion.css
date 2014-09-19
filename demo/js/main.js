@@ -119,11 +119,17 @@ window.onload=function()
 	// add more functions if necessary
 }
 
+
+$(document).ready(function(){
+});
+
 $(document).on('change', '#select-animotion', function(){
-	$('#code').fadeOut('fast');
+	//$('#code').fadeOut('fast');
 	$('#test').removeClass();
 	$('#test').addClass($('#select-animotion').val() + ' ' + $('input[name="duration"]:checked').val());
 	$('#code').text('');
+	insertUsageCode();
+	$('#code').fadeIn('fast');
 });
 
 $(document).on('change', 'input[name="duration"]', function(){
@@ -132,11 +138,8 @@ $(document).on('change', 'input[name="duration"]', function(){
 		setTimeout(function(){
 			$('#test').addClass($('#select-animotion').val() + ' ' + $('input[name="duration"]:checked').val());
 			if($('#code').is(':visible')){
-				var text = '&lt;element <span class="blue">class</span>=<span class="green">"' 
-					+ $('#select-animotion').val() + ' ' 
-					+ $('input[name="duration"]:checked').val() 
-					+ '"</span>&gt;Text&lt;/element&gt;';
-				$('#code').html(text);
+				insertUsageCode();
+				$('#code').fadeIn('fast');
 			}
 		}, 200);
 			
@@ -148,14 +151,19 @@ $(document).on('click', '#view-code', function(){
 		$('#code').fadeOut('fast');	
 	} else {
 		if($('#select-animotion').val() != ""){
-			var text = '&lt;element <span class="blue">class</span>=<span class="green">"' 
-				+ $('#select-animotion').val() + ' ' 
-				+ $('input[name="duration"]:checked').val() 
-				+ '"</span>&gt;Text&lt;/element&gt;';
-			$('#code').html(text);
+			insertUsageCode();
 			$('#code').fadeIn('fast');			
 		}
 	}
 });
+
+
+function insertUsageCode(){
+	var text = '<span class="element">&lt;div</span> <span class="blue">class</span>=<span class="green">"' 
+		+ $('#select-animotion').val() + ' ' 
+		+ $('input[name="duration"]:checked').val() 
+		+ '"</span><span class="element">&gt;</span>Text<span class="element">&lt;/div&gt;</span>';
+	$('#code').html(text);
+}
 
 
