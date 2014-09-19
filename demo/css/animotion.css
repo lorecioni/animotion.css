@@ -166,6 +166,42 @@
 	animation-name: rotate; 
 }
 
+.round{
+	-webkit-animation-duration: 2s; 
+	-ms-animation-duration: 2s; 
+	animation-duration: 2s; 
+	-webkit-transform-origin: center center; 
+	-ms-transform-origin: center center; 
+	transform-origin: center center;
+	-webkit-animation-name: round; 
+	-ms-animation-name: round; 
+	animation-name: round; 
+}
+
+.swingOut{
+	-webkit-animation-duration: 2s; 
+	-ms-animation-duration: 2s; 
+	animation-duration: 2s; 
+	-webkit-transform-origin: center center; 
+	-ms-transform-origin: center center; 
+	transform-origin: center center;
+	-webkit-animation-name: swingOut; 
+	-ms-animation-name: swingOut; 
+	animation-name: swingOut; 
+}
+
+.swingIn{
+	-webkit-animation-duration: 2s; 
+	-ms-animation-duration: 2s; 
+	animation-duration: 2s; 
+	-webkit-transform-origin: center center; 
+	-ms-transform-origin: center center; 
+	transform-origin: center center;
+	-webkit-animation-name: swingIn; 
+	-ms-animation-name: swingIn; 
+	animation-name: swingIn; 
+}
+
 
 /* Keyframes */
 
@@ -481,8 +517,6 @@
   100% { transform: scaleX(1) scaleY(1); }
 }
 
-/* Rotate */
-
 @-webkit-keyframes rotate { 
   from { -webkit-transform: rotate(0deg);  }
   to { -webkit-transform: rotate(360deg);  }
@@ -496,4 +530,52 @@
 @keyframes stretch { 
   from { transform: rotate(0deg);  }
   to { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes round { 
+  0% { border-radius: 0px;  }
+  50% { border-radius: 50%; }
+  100% {border-radius: 0px; }
+  }
+
+@-ms-keyframes round { 
+  0% { border-radius: 0px;  }
+  50% { border-radius: 50%; }
+  100% {border-radius: 0px; }
+}
+
+@keyframes round { 
+  0% { border-radius: 0px;  }
+  50% { border-radius: 50%; }
+  100% {border-radius: 0px; }
+}
+
+@-webkit-keyframes swingOut { 
+  from { -webkit-transform: scale3d(1,1,1) rotate(0deg); }
+  to { -webkit-transform: scale3d(0,0,0) rotate(360deg); }
+  }
+
+@-ms-keyframes swingOut { 
+  from { -ms-transform: scale3d(1,1,1) rotate(0deg); }
+  to { -ms-transform: scale3d(0,0,0) rotate(360deg); }
+}
+
+@keyframes swingOut { 
+  from { transform: scale3d(1,1,1) rotate(0deg); }
+  to { transform: scale3d(0,0,0) rotate(360deg); }
+}
+
+@-webkit-keyframes swingIn { 
+  from { -webkit-transform: scale3d(0,0,0) rotate(360deg); }
+  to { -webkit-transform: scale3d(1,1,1) rotate(0deg);  }
+  }
+
+@-ms-keyframes swingIn { 
+  from { -ms-transform: scale3d(0,0,0) rotate(360deg); }
+  to { -ms-transform: scale3d(1,1,1) rotate(0deg);  }
+}
+
+@keyframes swingIn { 
+  from { transform: scale3d(0,0,0) rotate(360deg); }
+  to { transform: scale3d(1,1,1) rotate(0deg);  }
 }
