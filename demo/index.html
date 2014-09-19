@@ -3,14 +3,27 @@
   <head>
 	<meta charset="UTF-8">
 	<title>Animotion.css</title>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://lorecioni.github.io/animotion.css/" />
+	<meta property="og:title" content="Animotion.css" />
+	<meta property="og:description" content="A cross-browser library of CSS3 animations" />
+	<meta property="og:site_name" content="Animotion.css" />
 	<link href='http://fonts.googleapis.com/css?family=Life+Savers:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animotion.css">
 	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="js/main.js"></script>
-	
   </head>
   <body>
+  	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=786477028052582&version=v2.0";
+  		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	<a href="https://github.com/lorecioni/animotion.css" target="_blank" class="github-ribbon">
 		<img src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
 	</a>
@@ -23,7 +36,7 @@
 			<div id="test" >Text</div>
 			<div id="right-panel">
 				<select id="select-animotion" class="turnintodropdown">
-					<!-- Animaion list -->
+					<!-- Animotion list -->
 					<option value="">Animotion:</option>
 					<option value="shake">Shake</option>
 					<option value="bounce">Bounce</option>
@@ -35,6 +48,7 @@
 					<option value="slideRight">Slide Right</option>
 					<option value="stretch">Stretch</option>
 				</select>
+				<!-- Select duration -->
 				<input type="radio" id="short" name="duration" value="short" checked/>
 					<label class="input-radio" for="short" ><span></span>Short</label>
 				<input type="radio" id="medium" name="duration" value="medium"/>
@@ -64,6 +78,15 @@
 				<div class="v-separator"></div>
 				<div id="download-src" class="btn">Download Source (5.1K)</div>			
 			</div>
+		</div>
+		<!-- Social -->
+		<div id="social" class="section">
+		  		<div id="sharing-box">
+  					<div class="fb-like" data-href="http://lorecioni.github.io/animotion.css/" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
+				<div id="twitter-share">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lorecioni.github.io/animotion.css/" data-counturl="http://lorecioni.github.io/animotion.css/" data-lang="en" data-count="vertical">Tweet</a>
+  				</div>
+  			</div>
 		</div>
 	</div>
 	<footer>
