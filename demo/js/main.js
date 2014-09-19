@@ -147,14 +147,7 @@ $(document).on('change', 'input[name="duration"]', function(){
 });
 
 $(document).on('click', '#view-code', function(){
-	if($('#code').is(':visible')){
-		$('#code').fadeOut('fast');	
-	} else {
-		if($('#select-animotion').val() != ""){
-			insertUsageCode();
-			$('#code').fadeIn('fast');			
-		}
-	}
+	window.location.href="#download";
 });
 
 

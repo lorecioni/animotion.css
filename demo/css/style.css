@@ -40,10 +40,13 @@ h2 {
 
 footer {
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 30px;
+	color: white;
 	clear: both;
 	font-weight: bold;
-	margin-bottom: 20px;
+	padding-bottom: 20px;
+	background-color: rgba(0, 0, 0, 0.31);
+	margin-top: 25px;
 }
 
 #test{
@@ -67,7 +70,7 @@ footer {
 }
 
 .code {
-	margin: 40px auto 0px;
+	margin: 40px auto;
 	text-align: center;
 	padding: 20px 25px;
 	background: #f8f5f0;
@@ -309,4 +312,43 @@ a {
 
 a:HOVER {
 	color: #C43A3A;
+}
+
+.section {
+	margin: 40px 0px;
+	padding: 30px 0px 0px;
+	border-top: 1px solid rgba(0, 0, 0, 0.14);
+	font-size: 1.2em;
+}
+
+footer a {
+	color: #F6FF8E;
+}
+
+.btn {
+	background: #18929C;
+	display: inline-flex;
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	font-size: 15pt;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.5s ease-out 0s;
+}
+
+.btn:HOVER {
+	background: #20B6C2;
+}
+
+.v-separator {
+	display: inline-flex;
+	width: 0px;
+	transition: all 0.5s ease-out 0s;
+}
+
+#btn-container {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 50px;
 }
