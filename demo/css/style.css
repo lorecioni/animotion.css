@@ -373,3 +373,7 @@ footer a {
 	height: 50px;
 	text-align: center;
 }
+
+div#version {
+	text-align: center;
+}
